@@ -15,8 +15,8 @@ float mybmi:: get_mass() {return mass;}
 
 float mybmi:: caculate(){
     float BMI;
-    float height=get_height();
-    float mass=get_mass();
+    float height=mybmi::height;
+    float mass=mybmi::mass;
     BMI = mass / ((height/100)*(height/100));
     return BMI;
 }
