@@ -22,6 +22,14 @@ int main(){
     }
 
 
+fstream outFile("file.out", ios::out);
+
+        if(!outFile)
+        {
+        cerr<<"Failed opening"<<endl;
+        exit(2);
+        }
+
     
     while (inFile >> h >> m)
     {
@@ -41,13 +49,6 @@ int main(){
 
 
 
-ofstream outFile("file.out", ios::out);
-
-        if(!outFile)
-        {
-        cerr<<"Failed opening"<<endl;
-        exit(2);
-        }
 }
 
 
