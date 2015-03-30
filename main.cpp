@@ -35,20 +35,20 @@ int main(){
         BMI=fat.caculate();
         category=fat.answer(BMI);
 
-       ofstream outFile("file.out", ios::out);
-    
+
+       outFile << BMI << "\t" << category << endl;    
+}
+
+
+
+ofstream outFile("file.out", ios::out);
+
         if(!outFile)
         {
         cerr<<"Failed opening"<<endl;
         exit(2);
         }
-
-       outFile << BMI << "\t" << category << endl;    
 }
-}
-
-
-
 
 
 
