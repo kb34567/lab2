@@ -22,7 +22,8 @@ int main(){
     }
 
 
-fstream outFile("file.out", ios::out);
+ofstream outFile("file.out", ios::out);
+
 
         if(!outFile)
         {
