@@ -34,7 +34,7 @@ ofstream outFile("file.out", ios::out);
     
     while (inFile >> h >> m)
     {
-        if(h==0) break;
+        if(h==0) exit(0);
         
         fat.set_height(h);
         fat.set_mass(m);
