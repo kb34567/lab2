@@ -20,5 +20,5 @@ public:
     
 private:
     float height,mass,BMI;
-    
+    string category;  
 };
